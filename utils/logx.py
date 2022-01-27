@@ -16,8 +16,13 @@ import time
 import atexit
 import os
 import warnings
-from utils.mpi_tools import proc_id, mpi_statistics_scalar
+# from utils.mpi_tools import proc_id, mpi_statistics_scalar
 from utils.serialization_utils import convert_json
+
+
+def proc_id():
+    return 1
+
 
 color2num = dict(
     gray=30,
